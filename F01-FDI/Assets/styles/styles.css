@@ -32,8 +32,8 @@ body {
     background-color: #101010;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
+    padding-left: 1vw;
+    padding-right: 1.5vw;
     font-family: calibri;
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ body {
 }
 
 .icon img{
-    width: 8rem;
+    width: 10vw;
     height: auto;
     align-items: center;
 }
@@ -56,15 +56,15 @@ body {
 }
 
 .box:nth-child(3) {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .welcome {
-    padding: 2rem;
-    border-radius: 2.1875rem;
+    padding: 3vw;
+    border-radius: 2vw;
     background-color: #0077B6;
-    font-size: 1rem;
+    font-size: 1.5vw;
     color: white;
     font-family: poppins;
     text-align: center;
@@ -84,35 +84,165 @@ body {
 
     background-color: rgba(0 ,0 , 0, 0.6);
     border-radius: 5vh;
-    padding: 1.5rem;
     border: 3px solid black;
-    min-width: fit-content;
-    min-height: fit-content;
     height: 72vh;
     width: 72vw;
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .patty  {
     /* border: 2px dashed beige; */
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
 }
 
+
 .cheese {
-    background-color: #6f6f6f79;
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
 }
 
 .cheese img {
-    width: 10vh;
+    width: 5vw;
     align-items: center;
 }
+
+.cheese button {
+    /* border: 2px dashed red; */
+    /* background-color: rgba(255, 255, 255, 0); */
+    border: 0;
+
+    border-radius: 50%;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+}
+
+/* new stuff */
+
+.slides img {
+    width: 800px;
+    height: 450px;
+}
+/* css override */
+.slider{
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 450px;
+  }
+
+/* css for manual slide nav */
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+
+  #radio5:checked ~ .first{
+    margin-left: -80%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 480px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+
+  #radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #40D3DC;
+  }
