@@ -13,7 +13,19 @@ var counter = 1;
 
 prev.onclick = function() {
   console.log("prev");
+  document.getElementById('radio' + counter).checked = true;
   counter--;
+  if(counter < 1) {
+    counter = 5;
+  }
+  clearInterval(slideshow);
+  slideshow = setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 5){
+        counter = 1;
+      }
+    }, 5000);
 }
 
 next.onclick = function() {
