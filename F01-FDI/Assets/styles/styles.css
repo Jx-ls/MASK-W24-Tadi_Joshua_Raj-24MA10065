@@ -15,17 +15,16 @@ body {
     min-height: 100vh;
 }
 
+/* main */
 .container {
     display: grid;
     grid-template-rows: 30fr 37fr 75fr 370fr;
-
 }
 
 .box {
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.7);
     color: beige;
-    /* border: 1px dashed red; */
 }
 
 .box:first-child {
@@ -39,7 +38,8 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
+/* title bar start */
+/* one piece logo */
 .icon {
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,8 @@ body {
 .line {
     border-right: 3px solid #4B4B4B;
 }
-
+/* title bar end */
+/* welcome statement start */
 .box:nth-child(3) {
     padding-left: 10vw;
     padding-right: 10vw;
@@ -69,7 +70,8 @@ body {
     font-family: poppins;
     text-align: center;
 }
-
+/* welcome statement end */
+/* carausol start */
 .box:nth-child(4) {
     /* border: 2px dashed red; */
     padding-top: 10%;
@@ -81,7 +83,6 @@ body {
 }
 
 .burger {
-
     background-color: rgba(0 ,0 , 0, 0.6);
     border-radius: 5vh;
     border: 3px solid black;
@@ -94,40 +95,6 @@ body {
     padding-left: 1vw;
 }
 
-.patty  {
-    /* border: 2px dashed beige; */
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.cheese {
-    height: 10vh;
-    width: 10vh;
-    border-radius: 50%;
-    
-}
-
-.cheese img {
-    width: 5vw;
-    padding-right: 0.75vh;
-}
-
-.cheese button {
-    /* border: 2px dashed red; */
-    /* background-color: rgba(255, 255, 255, 0); */
-    border: 0;
-
-    border-radius: 50%;
-    width: 5vw;
-    height: 5vw;
-}
-
 /* new stuff */
 
 .slides img {
@@ -136,7 +103,7 @@ body {
     height: 563px;
     max-height: 70vh;
 }
-/* css override */
+
 .slider{
     width: 1000px;
     max-width: 60vw;
@@ -258,3 +225,5 @@ body {
   #radio5:checked ~ .navigation-auto .auto-btn5{
     background: #40D3DC;
   }
+
+  /* carausol end */
