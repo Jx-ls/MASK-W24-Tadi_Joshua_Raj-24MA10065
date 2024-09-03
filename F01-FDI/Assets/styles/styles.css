@@ -85,11 +85,12 @@ body {
     background-color: rgba(0 ,0 , 0, 0.6);
     border-radius: 5vh;
     border: 3px solid black;
-    height: 72vh;
+    height: 80vh;
     width: 72vw;
     display: grid;
     justify-content: center;
     align-items: center;
+    grid-template-columns: 1fr 8fr 1fr;
 }
 
 .patty  {
@@ -100,6 +101,7 @@ body {
     height: 100%;
     display: grid;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -111,6 +113,7 @@ body {
 
 .cheese img {
     width: 5vw;
+    padding-right: 0.75vh;
     align-items: center;
 }
 
@@ -128,14 +131,18 @@ body {
 /* new stuff */
 
 .slides img {
-    width: 800px;
-    height: 450px;
+    width: 1000px;
+    max-width: 60vw;
+    height: 563px;
+    max-height: 70vh;
 }
 /* css override */
 .slider{
-    width: 800px;
-    height: 450px;
-    border-radius: 10px;
+    width: 1000px;
+    max-width: 60vw;
+    height: 563px;
+    max-height: 70vh;
+    border-radius: 2vb;
     overflow: hidden;
     
   }
@@ -156,16 +163,19 @@ body {
   }
   
   .slide img{
-    width: 800px;
-    height: 450px;
+    width: 1000px;
+    max-width: 60vw;
+    height: 563px;
+    max-height: 70vh;
   }
 
 /* css for manual slide nav */
 
 .navigation-manual{
     position: absolute;
-    width: 800px;
-    margin-top: -20px;
+    width: 1000px;
+    max-width: 60vw;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
   }
@@ -211,9 +221,10 @@ body {
   .navigation-auto{
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 1000px;
+    max-width: 60vw;
     justify-content: center;
-    margin-top: 480px;
+    margin-top: 600px;
   }
   
   .navigation-auto div{
