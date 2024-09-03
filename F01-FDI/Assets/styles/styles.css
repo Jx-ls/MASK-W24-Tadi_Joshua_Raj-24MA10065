@@ -86,12 +86,13 @@ body {
     background-color: rgba(0 ,0 , 0, 0.6);
     border-radius: 5vh;
     border: 3px solid black;
+    min-height: 763px;
     height: 80vh;
     width: 72vw;
+    min-width: 1200px;
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 8fr 1fr;
     padding-left: 1vw;
 }
 
@@ -99,19 +100,16 @@ body {
 
 .slides img {
     width: 1000px;
-    max-width: 60vw;
     height: 563px;
-    max-height: 70vh;
 }
 
 .slider{
     width: 1000px;
-    max-width: 60vw;
     height: 563px;
-    max-height: 70vh;
     border-radius: 2vb;
     overflow: hidden;
-    
+    display: grid;
+    grid-template-columns: auto;
   }
   
   .slides{
@@ -131,27 +129,66 @@ body {
   
   .slide img{
     width: 1000px;
-    max-width: 60vw;
     height: 563px;
-    max-height: 70vh;
   }
+
+/* navigation buttons */
+
+.prev-btn {
+  border: 0px;
+  border-radius: 1vb;
+  margin-top: 246px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  display: grid;
+  cursor: pointer;
+}
+
+.prev-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next-btn {
+  border: 0px;
+  border-radius: 1vb;
+  position: absolute;
+  margin-top: 246px;
+  margin-left: 930px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 70px;
+  height: 70px;
+  display: grid;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider b {
+  position: absolute;
+  top: -15px;
+  font-size: 70px;
+  color: azure;
+}
+
 
 /* css for manual slide nav */
 
 .navigation-manual{
     position: absolute;
-    width: 1000px;
-    max-width: 60vw;
-    height: auto;
-    margin-top: 100px;
     display: flex;
+    width: 1000px;
     justify-content: center;
+    margin-top: 600px;
   }
   
   .manual-btn{
     border: 2px solid #40D3DC;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 50%;
     cursor: pointer;
     transition: 1s;
   }
