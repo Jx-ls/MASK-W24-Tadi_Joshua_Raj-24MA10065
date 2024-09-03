@@ -3,7 +3,7 @@ let next = document.getElementById('next');
 
 
 var counter = 1;
-    setInterval(function(){
+    var slideshow = setInterval(function(){
       document.getElementById('radio' + counter).checked = true;
       counter++;
       if(counter > 5){
@@ -13,8 +13,22 @@ var counter = 1;
 
 prev.onclick = function() {
   console.log("prev");
+  counter--;
 }
 
 next.onclick = function() {
   console.log("next");
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 5) {
+    counter = 1;
+  }
+  clearInterval(slideshow);
+  slideshow = setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 5){
+        counter = 1;
+      }
+    }, 5000);
 }
