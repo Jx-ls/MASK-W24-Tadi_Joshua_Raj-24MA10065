@@ -91,6 +91,7 @@ body {
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 8fr 1fr;
+    padding-left: 1vw;
 }
 
 .patty  {
@@ -109,12 +110,12 @@ body {
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
+    
 }
 
 .cheese img {
     width: 5vw;
     padding-right: 0.75vh;
-    align-items: center;
 }
 
 .cheese button {
@@ -123,7 +124,6 @@ body {
     border: 0;
 
     border-radius: 50%;
-    align-items: center;
     width: 5vw;
     height: 5vw;
 }
