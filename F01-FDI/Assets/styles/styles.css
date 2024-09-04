@@ -66,8 +66,14 @@ body {
   align-items: center;
 }
 
+.icon:hover {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+
 .line {
   border-right: 3px solid #4B4B4B;
+  transform: scale(1);
 }
 
 .about {
@@ -75,11 +81,17 @@ body {
   justify-content: center;
 }
 
+.about:hover {
+  transform: scale(1.07);
+  transition: 0.1s;
+}
+
 .title:nth-child(1) {
   display: grid;
   align-items: center;
   padding-left: 7%;
 }
+
 
 .title:nth-child(1):hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -259,7 +271,7 @@ body {
     margin-left: -80%;
   }
   
-  /*css for automatic navigation*/
+/*css for automatic navigation*/
   
   .navigation-auto{
     position: absolute;
@@ -300,4 +312,45 @@ body {
     background: #40D3DC;
   }
 
-  /* carausol end */
+/* carausol end */
+
+/* footer start */
+
+.footer {
+  background-color: #101010;
+  color: beige;
+  padding-left: 0.5vw;
+  width: 100%;
+  height: 7vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 8fr 0.6fr 0.5fr 0.5fr;
+}
+
+.footer img {
+  width: 3vw;
+  /* min-width: 45px; */
+  height: 100%;
+  cursor: pointer;
+}
+
+.footer img:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.logo p {
+  font-size: 1vmax;
+  font-family: poppins;
+  line-height: 1.1vmax;
+  color: #dddddd;
+  position: absolute;
+  left: 4vw;
+}
