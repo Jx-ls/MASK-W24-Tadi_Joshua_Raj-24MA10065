@@ -44,3 +44,9 @@ next.onclick = function() {
       }
     }, 5000);
 }
+
+var loader = document.getElementById('preloader');
+
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+})
