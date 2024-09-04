@@ -6,7 +6,11 @@ Description:
 : Im from the department of Mathematics.
 : I come from Hyderabad, Telangana.
 : Boarder of LBS hall.
-: I watch a lot of anime (fav genre: magic, romance), recently picked up manwha and manga.
+: I watch a lot of anime (fav genre: magic, rom-com), recently picked up manwha and manga.
 Experience: 
 : C beginner.
-: Learnt WebD for the task.
+: WebD beginner.
+: I made only 1 task, cuz i had to learn everything from scratch.
+: I had been working on that from sat night till deadline, there were a few late night sessions.
+: Learning new things was fun especially if its related to programming.
+
