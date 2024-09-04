@@ -41,18 +41,30 @@ body {
 .box:first-child {
   background-color: #101010;
   font-family: calibri;
+  padding-right: 10px;
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   justify-content: space-between;
   align-items: center;
 }
 /* title bar start */
-/* one piece logo */
 .title {
   height: 100%;
   width: 100%;
   display: grid;
   align-items: center;
+}
+/* one piece logo */
+.title:nth-child(1) {
+  display: grid;
+  align-items: center;
+  padding-left: 7%;
+}
+
+.title:nth-child(1):hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+
 }
 
 .icon {
@@ -75,7 +87,7 @@ body {
   border-right: 3px solid #4B4B4B;
   transform: scale(1);
 }
-
+/* about area start */
 .about {
   display: grid;
   justify-content: center;
@@ -86,22 +98,11 @@ body {
   transition: 0.1s;
 }
 
-.title:nth-child(1) {
-  display: grid;
-  align-items: center;
-  padding-left: 7%;
-}
-
-
-.title:nth-child(1):hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-
-}
 .title:nth-child(3):hover {
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
+/* about area end */
 /* title bar end */
 /* welcome statement start */
 .box:nth-child(3) {
@@ -117,6 +118,11 @@ body {
     color: white;
     font-family: poppins;
     text-align: center;
+}
+
+.welcome:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 /* welcome statement end */
 /* carausol start */
@@ -325,12 +331,11 @@ body {
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: 3fr 8fr 0.6fr 0.5fr 0.5fr;
+  grid-template-columns: 3fr 8fr 0.6fr 0.5fr 0.5fr 0.5fr;
 }
 
 .footer img {
   width: 3vw;
-  /* min-width: 45px; */
   height: 100%;
   cursor: pointer;
 }
@@ -354,3 +359,4 @@ body {
   position: absolute;
   left: 4vw;
 }
+/* footer end */
