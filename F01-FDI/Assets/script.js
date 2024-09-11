@@ -1,7 +1,6 @@
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
 
-
 var counter = 1;
     var slideshow = setInterval(function(){
       document.getElementById('radio' + counter).checked = true;
